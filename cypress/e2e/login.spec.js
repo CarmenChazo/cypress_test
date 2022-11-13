@@ -29,7 +29,9 @@ describe('TEST DE LOGIN',() => {
       cy.get('#flash').contains("Your username is invalid!") 
     })
     
-    it('An empty user and password cannot login', () =>{
+        it('An empty user and password cannot login', () =>{
+      cy.get('#username').clear()
+      cy.get('#password').clear()
       cy.get(".fa").click()
       cy.get('#flash').contains("Your username is invalid!")
     })

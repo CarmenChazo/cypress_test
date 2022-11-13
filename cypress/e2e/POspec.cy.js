@@ -38,8 +38,8 @@ describe('TEST DE LOGIN',() => {
     })
     it('An empty valid user and password can no login', () =>{ 
 
-        loginPage.fillUser(" ")
-        loginPage.fillPass(" ")
+        loginPage.fillUser(text: any): void
+        loginPage.fillPass(text: any): void
         loginPage.clickButtonLogin()
         welcomePage.checkMessage ("Your username is invalid!")
     })  
